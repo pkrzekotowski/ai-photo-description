@@ -2,6 +2,8 @@
 
 A Flask application that generates natural language descriptions for uploaded photos using OpenAI's Vision API.
 
+⚠️ **IMPORTANT SECURITY NOTE**: This is a public repository. Never commit sensitive information like API keys, passwords, or personal data. Always use environment variables for secrets.
+
 ## Prerequisites
 
 - Python 3.8+
@@ -119,9 +121,14 @@ ai-photo-description/
 
 ## Security Notes
 
+- ⚠️ This is a public repository - be extra careful with sensitive data
 - Never commit `.env` files containing sensitive information
 - Always use environment variables for API keys and secrets
 - Keep your OpenAI API key secure and rotate it if compromised
+- If you accidentally commit sensitive data:
+  1. Immediately revoke/rotate the exposed credentials
+  2. Contact GitHub support to purge the sensitive data
+  3. Use `git filter-branch` or BFG Repo Cleaner to remove secrets from history
 
 ## Troubleshooting
 
@@ -141,11 +148,22 @@ ai-photo-description/
 
 ## Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+We welcome contributions! Please follow these steps:
+
+1. Check existing issues or create a new one to discuss your proposed changes
+2. Fork the repository
+3. Create a feature branch (`git checkout -b feature/amazing-feature`)
+4. Commit your changes (`git commit -m 'Add amazing feature'`)
+5. Push to the branch (`git push origin feature/amazing-feature`)
+6. Open a Pull Request
+
+### Code of Conduct
+
+- Be respectful and inclusive
+- Follow the existing code style
+- Write clear commit messages
+- Add tests for new features
+- Update documentation as needed
 
 ## License
 
